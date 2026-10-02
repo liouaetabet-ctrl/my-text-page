@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة تدريبية</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eeeeee;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .box {
+            background: white;
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>تسجيل الدخول التجريبي</h2>
+
+    <input type="text" id="username"
+           placeholder="اسم المستخدم">
+
+    <input type="password" id="password"
+           placeholder="كلمة المرور">
+
+    <button onclick="login()">دخول</button>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+function login() {
+
+    document.getElementById("message").textContent =
+        "هذه صفحة تدريبية فقط — لم يتم إرسال أي بيانات.";
+}
+</script>
+
+</body>
+</html>
